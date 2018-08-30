@@ -1,0 +1,10 @@
+---
+spring:
+  jpa:
+    show-sql: true
+    hibernate.naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://132.232.40.116:3306/myspring?useUnicode=yes&characterEncoding=UTF-8
+    username: root
+    password: password
