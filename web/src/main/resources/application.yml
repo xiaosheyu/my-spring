@@ -8,3 +8,6 @@ spring:
     url: jdbc:mysql://132.232.40.116:3306/myspring?useUnicode=yes&characterEncoding=UTF-8
     username: root
     password: password
+
+logging:
+  config: classpath:log4j2.xml
