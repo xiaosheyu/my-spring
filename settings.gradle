@@ -9,4 +9,6 @@
 
 rootProject.name = 'my-spring'
 include 'web'
+include 'resource-admin'
+include 'common'
 

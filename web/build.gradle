@@ -1,19 +1,16 @@
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web")
-    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile project(':resource-admin')
 
-    compile "mysql:mysql-connector-java"
-    compile "org.springframework.boot:spring-boot-starter-log4j2"
+    configurations {
+        providedRuntime
+        // remove default logger
+        all*.exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+    }
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
-configurations {
-    providedRuntime
-    // remove default logger
-    all*.exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
-}
-
 bootJar {
+    enabled = true
     baseName = 'my-spring'
 }
 
