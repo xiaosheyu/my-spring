@@ -29,11 +29,12 @@ subprojects {
     version = '1.0.0'
     group = 'my-spring'
 
+    jar.enabled = true
+
     tasks.withType(JavaCompile) {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
         options.encoding = 'utf-8'
     }
 }
-
 defaultTasks 'build'

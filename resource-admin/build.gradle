@@ -3,14 +3,3 @@ dependencies {
 
     compile("org.springframework.boot:spring-boot-starter-web")
 }
-
-sourceSets {
-    main {
-        java {
-            srcDirs = [
-                        'src/main/java',
-                        '../common/src/main/java'
-            ]
-        }
-    }
-}
