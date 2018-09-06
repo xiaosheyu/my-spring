@@ -1,8 +1,8 @@
-package com.my.spring.rest;
+package com.my.spring.admin.rest;
 
-import com.my.spring.response.CommonResponse;
-import com.my.spring.response.CommonResponseUtil;
-import com.my.spring.rest.command.LoginCommand;
+import com.my.spring.admin.rest.command.LoginCommand;
+import com.my.spring.common.response.CommonResponse;
+import com.my.spring.common.response.CommonResponseUtil;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

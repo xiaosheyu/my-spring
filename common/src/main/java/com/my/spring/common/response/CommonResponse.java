@@ -1,4 +1,4 @@
-package com.my.spring.response;
+package com.my.spring.common.response;
 
 import lombok.Getter;
 

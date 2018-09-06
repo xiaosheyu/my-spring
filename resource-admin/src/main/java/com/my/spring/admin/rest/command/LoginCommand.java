@@ -1,8 +1,7 @@
-package com.my.spring.rest.command;
+package com.my.spring.admin.rest.command;
 
 import lombok.Data;
-
-import javax.validation.constraints.NotBlank;
+import org.hibernate.validator.constraints.NotBlank;
 
 @Data
 public class LoginCommand {

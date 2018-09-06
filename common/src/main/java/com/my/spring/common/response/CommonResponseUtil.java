@@ -1,4 +1,4 @@
-package com.my.spring.response;
+package com.my.spring.common.response;
 
 public class CommonResponseUtil {
     public static CommonResponse ok(){
