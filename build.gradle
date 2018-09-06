@@ -25,13 +25,6 @@ subprojects {
     apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
 
-    dependencyManagement {
-        imports {
-            mavenBom "org.springframework.boot:spring-boot-dependencies:$springBootVersion"
-            mavenBom "io.spring.platform:platform-bom:${springPlatformVersion}"
-        }
-    }
-
     bootJar.enabled = false
     version = '1.0.0'
     group = 'my-spring'
