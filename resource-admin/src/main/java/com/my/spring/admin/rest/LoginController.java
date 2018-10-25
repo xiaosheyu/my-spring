@@ -18,6 +18,6 @@ public class LoginController {
 
     @PostMapping("/login")
     public CommonResponse login(@Valid @RequestBody LoginCommand command) {
-        return CommonResponseUtil.ok();
+        return CommonResponseUtil.ok(command);
     }
 }
