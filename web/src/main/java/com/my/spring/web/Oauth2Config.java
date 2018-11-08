@@ -58,6 +58,7 @@ public class Oauth2Config extends WebSecurityConfigurerAdapter {
             String sessionId = request.getSession().getId();
             MockCache.set(sessionId, authentication);
 //            response.sendRedirect(response.encodeRedirectURL("http://localhost:8081?token=" + sessionId));
+            response.addCookie(new Cookie("TOKEN", sessionId));
             response.sendRedirect("https://www.shownspace.cn?token=" + sessionId);
         });
         OAuth2RestTemplate githubTemplate = oAuth2RestTemplate();
