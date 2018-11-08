@@ -16,3 +16,17 @@ server:
   servlet:
     context-path: /v1
 
+github:
+  client:
+    clientId: efcb47787a5ae1052232
+    clientSecret: e19819ac6578b87c19e1a0e20eb2e23745ec7947
+    accessTokenUri: https://github.com/login/oauth/access_token
+    userAuthorizationUri: https://github.com/login/oauth/authorize
+    tokenName: oauth_token
+    authenticationScheme: query
+    clientAuthenticationScheme: form
+    scope:
+      - user
+      - repo
+  resource:
+    userInfoUri: https://api.github.com/user
